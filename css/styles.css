@@ -52,6 +52,13 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
+/* Los elementos que entran desde los lados (data-reveal) no deben ensanchar la
+   página: en celular empujaban la cabecera y el menú hamburguesa quedaba por fuera */
+main,
+main > section,
+footer {
+  overflow-x: clip;
+}
 img {
   max-width: 100%;
   height: auto;
